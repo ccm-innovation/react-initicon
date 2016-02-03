@@ -1,8 +1,8 @@
 # React Initicon
 > Initial Icons for React
 
-![Initials](https://drive.google.com/uc?export=view&id=0B4Q7cjSFrVFZbEZsREswaDlkdFU)
-![Single Initial](https://drive.google.com/uc?export=view&id=0B4Q7cjSFrVFZTXl2cVk4Qy1vSVU)
+![Initials](https://drive.google.com/open?id=0BwAfqxmTWrIma1dCZ1ZpVHNxRms)
+![Single Initial](https://drive.google.com/open?id=0BwAfqxmTWrImTXNuTlNsVlY3eHc)
 
 ## Installation
 `npm install --save react-initicons`
