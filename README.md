@@ -14,7 +14,7 @@ var Initicon = require('react-initicon');
 <Initicon
   size={100}
   text="Test Account"
-  number={23}
+  seed={23}
   single={false}
 />
 
