@@ -1,14 +1,8 @@
 {
   "name": "react-initicons-example",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
   "dependencies": {
     "react-initicon": "git://github.com/bradbumbalough/react-initicon.git"
-  },
-  "devDependencies": {},
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",

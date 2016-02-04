@@ -1,17 +1,15 @@
 <html>
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <script src="https://rawgit.com/Stuk/require1k/master/require1k.min.js"></script>
+  <!-- <script src="https://rawgit.com/Stuk/require1k/master/require1k.min.js"></script>-->
   <script src="https://fbcdn-dragon-a.akamaihd.net/hphotos-ak-xpa1/t39.3284-6/11057025_805715566176382_77439371_n.js"></script>
   <script src="https://fbcdn-dragon-a.akamaihd.net/hphotos-ak-xtf1/t39.3284-6/11057100_835863049837306_1087123501_n.js"></script>
+  <script src="node_modules/react-initicon/index.js"></script>
   <title>React Initicon Demo</title>
 </head>
 <body>
   <div id="container"></div>
   <script type="text/jsx">
-    R(function (require) {
-      var Initicon = require("react-initicon/index");
-
       var App = React.createClass({
         getInitialState: function() {
           return {
@@ -90,13 +88,7 @@
           );
         }
       });
-
       React.render(<App />, document.getElementById("container"));
-    }, function (err, exports) {
-      if (err) {
-        console.error("Error", err);
-      }
-    });
   </script>
 </body>
 </html>

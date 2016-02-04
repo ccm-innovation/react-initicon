@@ -72,4 +72,4 @@ var Initicon = function (_React$Component) {
 
 ;
 
-if (typeof module !== 'undefined') module.exports = Initicon;
+module.exports = Initicon;
