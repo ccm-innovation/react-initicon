@@ -2,24 +2,6 @@ if (typeof require !== 'undefined') var React = require('react')
 
 class Initicon extends React.Component {
 
-  static propTypes = {
-    text: React.PropTypes.string.isRequired,
-    size: React.PropTypes.any.isRequired,
-    seed: React.PropTypes.number,
-    color: React.PropTypes.any,
-    single: React.PropTypes.bool,
-    saturation: React.PropTypes.string,
-    brightness: React.PropTypes.string,
-  }
-
-  static defaultProps = {
-    size: 75,
-    saturation: "80%",
-    brightness: "40%",
-    color: false,
-    single: false,
-  }
-
   _getBackgroundColor() {
     let {seed, saturation, brightness, color} = this.props
     if (color) return color
@@ -58,6 +40,24 @@ class Initicon extends React.Component {
       </div>
     )
   }
-};
+}
+
+Initicon.defaultProps = {
+  size: 75,
+  saturation: "80%",
+  brightness: "40%",
+  color: false,
+  single: false
+}
+
+Initicon.propTypes = {
+  text: React.PropTypes.string.isRequired,
+  size: React.PropTypes.any.isRequired,
+  seed: React.PropTypes.number,
+  color: React.PropTypes.any,
+  single: React.PropTypes.bool,
+  saturation: React.PropTypes.string,
+  brightness: React.PropTypes.string
+}
 
 if (typeof module !== 'undefined') module.exports = Initicon;
