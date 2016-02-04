@@ -1,7 +1,8 @@
 if (typeof require !== 'undefined') var React = require('react')
 
 class Initicon extends React.Component {
-  static propTypes: {
+
+  static propTypes = {
     text: React.PropTypes.string.isRequired,
     size: React.PropTypes.any.isRequired,
     seed: React.PropTypes.number,
@@ -11,7 +12,7 @@ class Initicon extends React.Component {
     brightness: React.PropTypes.string
   };
 
-  static defaultProps: {
+  static defaultProps = {
     size: 75,
     saturation: "80%",
     brightness: "40%",
