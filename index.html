@@ -18,7 +18,7 @@
             text: "React Initicon",
             seed: 7462,
             single: false,
-            width: 100,
+            size: 100,
             saturation: '80',
             brightness: '40'
           }
@@ -58,12 +58,12 @@
                   />
                 </div>
                 <div>
-                  <label>Width</label>
+                  <label>Size</label>
                   <input
                     type="text"
-                    name="width"
+                    name="size"
                     onChange={this._onChange}
-                    value={this.state.width}
+                    value={this.state.size}
                   />
                 </div>
                 <div>
@@ -80,10 +80,10 @@
                 <Initicon
                   text={this.state.text}
                   seed={this.state.seed}
-                  width={this.state.width}
+                  size={this.state.size}
                   single={this.state.single}
                   saturation={this.state.saturation + '%'}
-                  brightness={this.state.saturation + '%'}
+                  brightness={this.state.brightness + '%'}
                 />
               </p>
             </div>
