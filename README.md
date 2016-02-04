@@ -1,6 +1,11 @@
 # React Initicon
 > Initial Icons for React
 
+![RE](https://drive.google.com/uc?export=view&id=0BwAfqxmTWrImZzdZS1ZweVNlaUU)
+![A](https://drive.google.com/uc?export=view&id=0BwAfqxmTWrImeWg3TzQ3bWpOZ0k)
+![C](https://drive.google.com/uc?export=view&id=0BwAfqxmTWrImRHNtQ0hSQmswY0k)
+![T](https://drive.google.com/uc?export=view&id=0BwAfqxmTWrImMWc2R01Zb2w5OEU)
+
 ![IN](https://drive.google.com/uc?export=view&id=0BwAfqxmTWrImSjJJdG1CWHdTaEU)
 ![IT](https://drive.google.com/uc?export=view&id=0BwAfqxmTWrImREkwUFRwSGM0cjA)
 ![IC](https://drive.google.com/uc?export=view&id=0BwAfqxmTWrImanU0WU1WSnNhME0)
