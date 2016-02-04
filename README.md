@@ -4,6 +4,8 @@
 ![Initials](https://drive.google.com/uc?export=view&id=0BwAfqxmTWrIma1dCZ1ZpVHNxRms)
 ![Single Initial](https://drive.google.com/uc?export=view&id=0BwAfqxmTWrImTXNuTlNsVlY3eHc)
 
+[Example Demo](https://bradbumbalough.github.io/react-initicon)
+
 ## Usage
 ```JavaScript
 <Initicon
