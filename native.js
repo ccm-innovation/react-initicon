@@ -33,7 +33,8 @@ var NativeIniticon = function (_Initicon) {
         { style: [styles.icon, {
             backgroundColor: this._getBackgroundColor(),
             height: this.props.size,
-            width: this.props.size
+            width: this.props.size,
+            borderRadius: this.props.size / 2
           }, this.props.style]
         },
         React.createElement(

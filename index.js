@@ -61,7 +61,11 @@ var Initicon = function (_React$Component) {
             height: this.props.size + "px",
             width: this.props.size + "px",
             fontSize: this._getFontSize() + "px",
-            lineHeight: this.props.size + "px" } },
+            lineHeight: this.props.size + "px",
+            borderRadius: '50%',
+            display: 'inline-block',
+            textAlign: 'center',
+            color: '#ffffff' } },
         this._getInitials()
       );
     }
