@@ -1,3 +1,5 @@
+if (typeof require !== 'undefined') var React = require('react')
+
 class Initicon extends React.Component {
   static propTypes: {
     text: React.PropTypes.string.isRequired,
@@ -57,4 +59,4 @@ class Initicon extends React.Component {
   }
 };
 
-module.exports = Initicon;
+if (typeof module !== 'undefined') module.exports = Initicon;
