@@ -19,8 +19,8 @@
             seed: 7462,
             single: false,
             width: 100,
-            saturation: '100',
-            brightness: '100'
+            saturation: '80',
+            brightness: '40'
           }
         },
         _onChange: function(e) {
@@ -38,38 +38,54 @@
           return (
             <div>
               <h1>React Initicon Demo</h1>
-              <input
-                type="text"
-                name="text"
-                onChange={this._onChange}
-                value={this.state.text}
-              />
-              <input
-                type="text"
-                name="seed"
-                onChange={this._onChange}
-                value={this.state.seed}
-              />
-              <input
-                type="text"
-                name="width"
-                onChange={this._onChange}
-                value={this.state.width}
-              />
-              <input
-                type="checkbox"
-                name="single"
-                onChange={this._onChange}
-                value={this.state.checkbox}
-              />
-              <Initicon
-                text={this.state.text}
-                seed={this.state.seed}
-                width={this.state.width}
-                single={this.state.single}
-                saturation={this.state.saturation + '%'}
-                brightness={this.state.saturation + '%'}
-              />
+              <p>
+                <div>
+                  <label>Text</label>
+                  <input
+                    type="text"
+                    name="text"
+                    onChange={this._onChange}
+                    value={this.state.text}
+                  />
+                </div>
+                <div>
+                  <label>Seed</label>
+                  <input
+                    type="text"
+                    name="seed"
+                    onChange={this._onChange}
+                    value={this.state.seed}
+                  />
+                </div>
+                <div>
+                  <label>Width</label>
+                  <input
+                    type="text"
+                    name="width"
+                    onChange={this._onChange}
+                    value={this.state.width}
+                  />
+                </div>
+                <div>
+                  <label>Use Single</label>
+                  <input
+                    type="checkbox"
+                    name="single"
+                    onChange={this._onChange}
+                    value={this.state.checkbox}
+                  />
+                </div>
+              </p>
+              <p>
+                <Initicon
+                  text={this.state.text}
+                  seed={this.state.seed}
+                  width={this.state.width}
+                  single={this.state.single}
+                  saturation={this.state.saturation + '%'}
+                  brightness={this.state.saturation + '%'}
+                />
+              </p>
             </div>
           );
         }
