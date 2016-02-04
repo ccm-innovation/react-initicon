@@ -1,29 +1,78 @@
 <html>
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <script src="https://fb.me/react-0.14.7.min.js"></script>
-  <script src="https://fb.me/react-dom-0.14.7.min.js"></script>
+  <script src="https://rawgit.com/Stuk/require1k/master/require1k.min.js"></script>
+  <script src="https://fbcdn-dragon-a.akamaihd.net/hphotos-ak-xpa1/t39.3284-6/11057025_805715566176382_77439371_n.js"></script>
+  <script src="https://fbcdn-dragon-a.akamaihd.net/hphotos-ak-xtf1/t39.3284-6/11057100_835863049837306_1087123501_n.js"></script>
   <title>React Initicon Demo</title>
 </head>
 <body>
-  <script src="http://www.jimsproch.com/react/babel-browser.js"></script>
-  <script src="http://requirejs.org/docs/release/2.1.22/minified/require.js"></script>
-  <script src="https://rawgit.com/bradbumbalough/react-initicon/master/index.js" type="text/babel"></script>
-  <script src="https://rawgit.com/bradbumbalough/react-initicon/master/shared.js" type="text/babel"></script>
   <div id="container"></div>
-  <script type="text/babel">
+  <script type="text/jsx">
+    R(function (require) {
+      var Initicon = require("react-initicon");
 
+      var App = React.createClass({
+        getInitialState: function() {
+          return {
+            name: "React Initicon",
+            single: false,
+            width: 100,
+            saturation: '100',
+            brightness: '100'
+          }
+        },
+        onChange: function(e) {
+          var state = this.state;
+          var input = e.target.name;
+          if (input == 'single') {
+            state[input] = e.target.checked;
+          }
+          else {
+            state[target] = e.target.value;
+          }
+          this.setState(state;
+        },
+        render: function() {
+          return (
+            <div>
+              <h1>React Initicon Demo</h1>
+              <input
+                type="text"
+                name="name"
+                value={this.state.name}
+                onChange={this._onChange}
+              />
+              <input
+                type="text"
+                name="width"
+                value={this.state.width}
+                onChange={this._onChange}
+              />
+              <input
+                type="checkbox"
+                name="single"
+                value={this.state.single}
+                onChange={this._onChange}
+              />
+              <Initicon
+                name={this.state.name}
+                width={this.state.width}
+                single={this.state.single}
+                saturation={this.state.saturation + '%'}
+                brightness={this.state.saturation + '%'}
+              />
+            </div>
+          );
+        }
+      });
 
-    var Demo = React.createClass({
-      render: function() {
-        return null;
+      React.render(<App />, document.getElementById("container"));
+    }, function (err, exports) {
+      if (err) {
+        console.error("Error", err);
       }
     });
-
-    ReactDOM.render(
-      <Demo />,
-      document.getElementById('container')
-    );
   </script>
 </body>
 </html>
