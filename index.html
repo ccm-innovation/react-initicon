@@ -22,14 +22,14 @@
             brightness: '100'
           }
         },
-        onChange: function(e) {
+        _onChange: function(e) {
           var state = this.state;
           var input = e.target.name;
           if (input == 'single') {
             state[input] = e.target.checked;
           }
           else {
-            state[target] = e.target.value;
+            state[input] = e.target.value;
           }
           this.setState(state);
         },
@@ -40,20 +40,20 @@
               <input
                 type="text"
                 name="name"
-                value={this.state.name}
                 onChange={this._onChange}
+                value={this.state.name}
               />
               <input
                 type="text"
                 name="width"
-                value={this.state.width}
                 onChange={this._onChange}
+                value={this.state.width}
               />
               <input
                 type="checkbox"
                 name="single"
-                value={this.state.single}
                 onChange={this._onChange}
+                value={this.state.checkbox}
               />
               <Initicon
                 name={this.state.name}
