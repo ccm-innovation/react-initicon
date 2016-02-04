@@ -19,8 +19,8 @@ exports.getInitials = function(text, single) {
 
 exports.defaultProps = {
   size: 75,
-  saturation: "50%",
-  brightness: "50%",
+  saturation: "80%",
+  brightness: "40%",
   color: false,
   single: false
 }
