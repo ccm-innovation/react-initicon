@@ -4,8 +4,6 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "react": "^0.14.7",
-    "react-dom": "^0.14.7",
     "react-initicon": "git://github.com/bradbumbalough/react-initicon.git"
   },
   "devDependencies": {},
