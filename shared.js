@@ -1,10 +1,8 @@
 // reuse main methods for Native
 exports.getBackgroundColor = function(seed, saturation, brightness) {
   var hue = Math.sin(seed);
-  hue = hue - Math.floor(hue * (1 - 360)) + 1;
-  if(hue < 0) {
-    hue = -hue;
-  }
+  hue = hue < 0 ? -hue : hue;
+  hue = Math.round(hue * 359) + 1;
   hue = Math.round(hue);
   return "hsl(" + hue + "," + saturation + "," + brightness + ")";
 }
