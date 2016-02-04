@@ -1,0 +1,25 @@
+{
+  "name": "react-initicons-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "react": "^0.14.7",
+    "react-dom": "^0.14.7",
+    "react-initicon": "git://github.com/bradbumbalough/react-initicon.git"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bradbumbalough/react-initicons.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bradbumbalough/react-initicons/issues"
+  },
+  "homepage": "https://github.com/bradbumbalough/react-initicons#readme"
+}
