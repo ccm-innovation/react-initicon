@@ -9,16 +9,16 @@ class Initicon extends React.Component {
     color: React.PropTypes.any,
     single: React.PropTypes.bool,
     saturation: React.PropTypes.string,
-    brightness: React.PropTypes.string
-  };
+    brightness: React.PropTypes.string,
+  }
 
   static defaultProps = {
     size: 75,
     saturation: "80%",
     brightness: "40%",
     color: false,
-    single: false
-  };
+    single: false,
+  }
 
   _getBackgroundColor() {
     let {seed, saturation, brightness, color} = this.props
