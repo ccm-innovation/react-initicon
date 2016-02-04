@@ -33,8 +33,8 @@ var Initicon = require('react-initicon/native');
 ```
 
 ## Props
-|Key|Type|Description|
-|-|-|-|
+|Key |Type |Description |
+|- |- |- |
 |`text`|String|The text to use to make initials|
 |`size`|Number|The pixel height / width of the icon|
 |`seed`|Number|Number uses to seed the random hue generator|
