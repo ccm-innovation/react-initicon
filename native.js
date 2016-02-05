@@ -9,15 +9,21 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 var React = require('react-native');
-var Initicon = require('./index');
 
 var View = React.View;
 var Text = React.Text;
 var StyleSheet = React.StyleSheet;
 var PropTypes = React.PropTypes;
+var Component = React.Component;
 
-var NativeIniticon = function (_Initicon) {
-  _inherits(NativeIniticon, _Initicon);
+var _require = require('./shared');
+
+var getBackgroundColor = _require.getBackgroundColor;
+var getFontSize = _require.getFontSize;
+var getInitials = _require.getInitials;
+
+var NativeIniticon = function (_Component) {
+  _inherits(NativeIniticon, _Component);
 
   function NativeIniticon() {
     _classCallCheck(this, NativeIniticon);
@@ -28,10 +34,12 @@ var NativeIniticon = function (_Initicon) {
   _createClass(NativeIniticon, [{
     key: 'render',
     value: function render() {
+      var props = this.props;
+
       return React.createElement(
         View,
         { style: [styles.icon, {
-            backgroundColor: this._getBackgroundColor(),
+            backgroundColor: getBackgroundColor(props),
             height: this.props.size,
             width: this.props.size,
             borderRadius: this.props.size / 2
@@ -39,15 +47,15 @@ var NativeIniticon = function (_Initicon) {
         },
         React.createElement(
           Text,
-          { style: [styles.text, { fontSize: this._getFontSize() }] },
-          this._getInitials()
+          { style: [styles.text, { fontSize: getFontSize(props) }] },
+          getInitials(props)
         )
       );
     }
   }]);
 
   return NativeIniticon;
-}(Initicon);
+}(Component);
 
 ;
 

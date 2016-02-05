@@ -1,8 +1,15 @@
 # React Initicon
 > Initial Icons for React
 
-![Initials](https://drive.google.com/uc?export=view&id=0BwAfqxmTWrIma1dCZ1ZpVHNxRms)
-![Single Initial](https://drive.google.com/uc?export=view&id=0BwAfqxmTWrImTXNuTlNsVlY3eHc)
+![RE](https://drive.google.com/uc?export=view&id=0BwAfqxmTWrImZzdZS1ZweVNlaUU)
+![A](https://drive.google.com/uc?export=view&id=0BwAfqxmTWrImeWg3TzQ3bWpOZ0k)
+![C](https://drive.google.com/uc?export=view&id=0BwAfqxmTWrImRHNtQ0hSQmswY0k)
+![T](https://drive.google.com/uc?export=view&id=0BwAfqxmTWrImMWc2R01Zb2w5OEU)
+
+![IN](https://drive.google.com/uc?export=view&id=0BwAfqxmTWrImSjJJdG1CWHdTaEU)
+![IT](https://drive.google.com/uc?export=view&id=0BwAfqxmTWrImREkwUFRwSGM0cjA)
+![IC](https://drive.google.com/uc?export=view&id=0BwAfqxmTWrImanU0WU1WSnNhME0)
+![ON](https://drive.google.com/uc?export=view&id=0BwAfqxmTWrImRXVWZDJyWWhzbHc)
 
 [Initicon Demo](https://bradbumbalough.github.io/react-initicon)
 
@@ -18,7 +25,7 @@
 
 ## Browser
 ```HTML
-<script src="https://rawgit.com/bradbumbalough/react-initicon/master/index.js"></script>
+<script src="https://rawgit.com/bradbumbalough/react-initicon/master/initicon.min.js"></script>
 ```
 
 ## Installation
@@ -44,3 +51,6 @@ var Initicon = require('react-initicon/native');
 |`single`|Boolean|Whether to only use a single initial or now|
 |`saturation`|String|Specify the `hsl` saturation value|
 |`brightness`|String|Specify the `hsl` lightness (brightness) value|
+
+## Contributing
+Modify the files in the `src` folder. Before committing, update the build by running `npm run build`. This will babelify the code and then bundle into `initicon.min.j` for a browser version.

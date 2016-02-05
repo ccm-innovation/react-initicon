@@ -1,25 +1,32 @@
 let React = require('react-native')
-let Initicon = require('./index')
 
 let {
  View,
  Text,
  StyleSheet,
- PropTypes
+ PropTypes,
+ Component
 } = React;
 
-class NativeIniticon extends Initicon {
+let {
+  getBackgroundColor,
+  getFontSize,
+  getInitials
+} = require('./shared')
+
+class NativeIniticon extends Component {
   render() {
+    let {props} = this
     return (
       <View style={[styles.icon, {
-                    backgroundColor: this._getBackgroundColor(),
+                    backgroundColor: getBackgroundColor(props),
                     height: this.props.size,
                     width: this.props.size,
                     borderRadius: this.props.size/2
                   },
                   this.props.style]}
       >
-        <Text style={[styles.text, {fontSize: this._getFontSize()}]}>{this._getInitials()}</Text>
+        <Text style={[styles.text, {fontSize: getFontSize(props)}]}>{getInitials(props)}</Text>
       </View>
     );
   }

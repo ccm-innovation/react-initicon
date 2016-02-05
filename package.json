@@ -2,19 +2,30 @@
   "name": "react-initicon",
   "version": "0.0.1",
   "description": "A lightweight React library to generate dynamic Initial Icons (similar to Identicons).",
-  "main": "index.js",
+  "main": "lib",
   "scripts": {
-    "build": "babel -d ./ src --presets es2015,react,stage-0"
+    "build": "babel -d ./ src --presets es2015,react,stage-0 && browserify index.js | uglifyjs -o initicon.min.js"
   },
-  "author": "Michael Hirsch <michael@hirsch.me>, Brad Bumbalough <bradley.bumbalough@gmail.com>",
+  "author": "Brad Bumbalough <bradley.bumbalough@gmail.com>",
+  "contributors": [{
+    "name": "Michael Hirsch",
+    "email": "michael@hirsch.me"
+  }],
   "license": "MIT",
   "devDependencies": {
     "babel-cli": "^6.2.0",
     "babel-preset-es2015": "^6.1.18",
     "babel-preset-react": "^6.1.18",
-    "babel-preset-stage-0": "^6.3.13"
+    "babel-preset-stage-0": "^6.3.13",
+    "browserify": "^13.0.0",
+    "uglifyjs": "^2.4.10"
   },
-  "keywords":["react", "react-native", "identicon", "icon"],
+  "keywords": [
+    "react",
+    "react-native",
+    "identicon",
+    "icon"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/bradbumbalough/react-initicons.git"
