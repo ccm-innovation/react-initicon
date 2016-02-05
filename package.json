@@ -4,7 +4,7 @@
   "description": "A lightweight React library to generate dynamic Initial Icons (similar to Identicons).",
   "main": "lib",
   "scripts": {
-    "build": "babel -d ./ src --presets es2015,react,stage-0 && browserify index.js | uglifyjs -o initicon.min.js"
+    "build": "babel -d ./ src --presets es2015,react,stage-0 && browserify index.js -o browser.js"
   },
   "author": "Brad Bumbalough <bradley.bumbalough@gmail.com>",
   "contributors": [{
