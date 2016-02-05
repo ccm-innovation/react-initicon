@@ -16,6 +16,7 @@ if (typeof require != 'undefined') {
   var getBackgroundColor = _require.getBackgroundColor;
   var getFontSize = _require.getFontSize;
   var getInitials = _require.getInitials;
+  var defaultProps = _require.defaultProps;
 }
 
 var Initicon = function (_React$Component) {
@@ -61,13 +62,7 @@ Initicon.propTypes = {
   brightness: React.PropTypes.string
 };
 
-Initicon.defaultProps = {
-  size: 75,
-  saturation: "80%",
-  brightness: "40%",
-  color: false,
-  single: false
-};
+Initicon.defaultProps = defaultProps;
 
 if (typeof module != 'undefined') {
   module.exports = Initicon;

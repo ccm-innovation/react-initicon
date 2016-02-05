@@ -30,8 +30,17 @@ function getInitials(props) {
   }
 }
 
+var defaultProps = {
+  size: 75,
+  saturation: "80%",
+  brightness: "40%",
+  color: false,
+  single: false
+};
+
 if (typeof exports != 'undefined') {
   exports.getBackgroundColor = getBackgroundColor;
   exports.getFontSize = getFontSize;
   exports.getInitials = getInitials;
+  exports.defaultProps = defaultProps;
 }

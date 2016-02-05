@@ -21,6 +21,7 @@ var _require = require('./shared');
 var getBackgroundColor = _require.getBackgroundColor;
 var getFontSize = _require.getFontSize;
 var getInitials = _require.getInitials;
+var defaultProps = _require.defaultProps;
 
 var NativeIniticon = function (_Component) {
   _inherits(NativeIniticon, _Component);
@@ -58,6 +59,18 @@ var NativeIniticon = function (_Component) {
 }(Component);
 
 ;
+
+NativeIniticon.propTypes = {
+  text: React.PropTypes.string.isRequired,
+  size: React.PropTypes.any.isRequired,
+  seed: React.PropTypes.number,
+  color: React.PropTypes.any,
+  single: React.PropTypes.bool,
+  saturation: React.PropTypes.string,
+  brightness: React.PropTypes.string
+};
+
+NativeIniticon.defaultProps = defaultProps;
 
 var styles = StyleSheet.create({
   icon: {

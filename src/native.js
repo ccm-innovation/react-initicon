@@ -11,7 +11,8 @@ let {
 let {
   getBackgroundColor,
   getFontSize,
-  getInitials
+  getInitials,
+  defaultProps
 } = require('./shared')
 
 class NativeIniticon extends Component {
@@ -31,6 +32,18 @@ class NativeIniticon extends Component {
     );
   }
 };
+
+NativeIniticon.propTypes = {
+  text: React.PropTypes.string.isRequired,
+  size: React.PropTypes.any.isRequired,
+  seed: React.PropTypes.number,
+  color: React.PropTypes.any,
+  single: React.PropTypes.bool,
+  saturation: React.PropTypes.string,
+  brightness: React.PropTypes.string
+}
+
+NativeIniticon.defaultProps = defaultProps
 
 let styles = StyleSheet.create({
   icon: {

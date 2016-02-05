@@ -4,7 +4,8 @@ if (typeof require != 'undefined') {
   var {
     getBackgroundColor,
     getFontSize,
-    getInitials
+    getInitials,
+    defaultProps
   } = require('./shared')
 }
 
@@ -37,13 +38,7 @@ Initicon.propTypes = {
   brightness: React.PropTypes.string
 }
 
-Initicon.defaultProps = {
-  size: 75,
-  saturation: "80%",
-  brightness: "40%",
-  color: false,
-  single: false
-}
+Initicon.defaultProps = defaultProps
 
 if (typeof module != 'undefined') {
   module.exports = Initicon;
