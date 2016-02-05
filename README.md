@@ -29,7 +29,9 @@
 ```
 
 ## Installation
-`npm install --save react-initicons`
+```
+npm install --save react-initicon
+```
 
 ## Node.js
 ```JavaScript
