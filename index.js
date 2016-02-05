@@ -13,9 +13,9 @@ if (typeof require != 'undefined') {
 
   var _require = require('./shared');
 
-  var _getBackgroundColor = _require.getBackgroundColor;
-  var _getFontSize = _require.getFontSize;
-  var _getInitials = _require.getInitials;
+  var getBackgroundColor = _require.getBackgroundColor;
+  var getFontSize = _require.getFontSize;
+  var getInitials = _require.getInitials;
 }
 
 var Initicon = function (_React$Component) {
@@ -50,24 +50,6 @@ var Initicon = function (_React$Component) {
 
   return Initicon;
 }(React.Component);
-
-Initicon.defaultProps = {
-  size: 75,
-  saturation: "80%",
-  brightness: "40%",
-  color: false,
-  single: false
-};
-
-Initicon.propTypes = {
-  text: React.PropTypes.string.isRequired,
-  size: React.PropTypes.any.isRequired,
-  seed: React.PropTypes.number,
-  color: React.PropTypes.any,
-  single: React.PropTypes.bool,
-  saturation: React.PropTypes.string,
-  brightness: React.PropTypes.string
-};
 
 Initicon.propTypes = {
   text: React.PropTypes.string.isRequired,

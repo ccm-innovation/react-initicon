@@ -1,7 +1,7 @@
 if (typeof require != 'undefined') {
   var React = require('react')
 
-  let {
+  var {
     getBackgroundColor,
     getFontSize,
     getInitials
