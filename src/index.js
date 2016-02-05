@@ -1,10 +1,12 @@
-var React = require('react')
+if (typeof require != 'undefined') {
+  var React = require('react')
 
-let {
-  getBackgroundColor,
-  getFontSize,
-  getInitials
-} = require('./shared')
+  let {
+    getBackgroundColor,
+    getFontSize,
+    getInitials
+  } = require('./shared')
+}
 
 class Initicon extends React.Component {
   render() {
@@ -61,4 +63,6 @@ Initicon.defaultProps = {
   single: false
 }
 
-module.exports = Initicon;
+if (typeof module != 'undefined') {
+  module.exports = Initicon;
+}

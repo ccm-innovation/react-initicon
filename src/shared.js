@@ -21,6 +21,8 @@ function getInitials(props) {
   }
 }
 
-exports.getBackgroundColor = getBackgroundColor;
-exports.getFontSize = getFontSize;
-exports.getInitials = getInitials;
+if (typeof exports != 'undefined') {
+  exports.getBackgroundColor = getBackgroundColor;
+  exports.getFontSize = getFontSize;
+  exports.getInitials = getInitials;
+}

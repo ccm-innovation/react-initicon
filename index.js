@@ -8,13 +8,15 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var React = require('react');
+if (typeof require != 'undefined') {
+  var React = require('react');
 
-var _require = require('./shared');
+  var _require = require('./shared');
 
-var getBackgroundColor = _require.getBackgroundColor;
-var getFontSize = _require.getFontSize;
-var getInitials = _require.getInitials;
+  var _getBackgroundColor = _require.getBackgroundColor;
+  var _getFontSize = _require.getFontSize;
+  var _getInitials = _require.getInitials;
+}
 
 var Initicon = function (_React$Component) {
   _inherits(Initicon, _React$Component);
@@ -85,4 +87,6 @@ Initicon.defaultProps = {
   single: false
 };
 
-module.exports = Initicon;
+if (typeof module != 'undefined') {
+  module.exports = Initicon;
+}
