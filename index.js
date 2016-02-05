@@ -49,7 +49,23 @@ var Initicon = function (_React$Component) {
   return Initicon;
 }(React.Component);
 
-;
+Initicon.defaultProps = {
+  size: 75,
+  saturation: "80%",
+  brightness: "40%",
+  color: false,
+  single: false
+};
+
+Initicon.propTypes = {
+  text: React.PropTypes.string.isRequired,
+  size: React.PropTypes.any.isRequired,
+  seed: React.PropTypes.number,
+  color: React.PropTypes.any,
+  single: React.PropTypes.bool,
+  saturation: React.PropTypes.string,
+  brightness: React.PropTypes.string
+};
 
 Initicon.propTypes = {
   text: React.PropTypes.string.isRequired,
