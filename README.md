@@ -30,7 +30,7 @@
 
 ## Installation
 ```
-npm install --save react-initicon
+$ npm install --save react-initicon
 ```
 
 ## Node.js

@@ -35,10 +35,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bradbumbalough/react-initicons.git"
+    "url": "git+https://github.com/bradbumbalough/react-initicon.git"
   },
   "bugs": {
-    "url": "https://github.com/bradbumbalough/react-initicons/issues"
+    "url": "https://github.com/bradbumbalough/react-initicon/issues"
   },
-  "homepage": "https://github.com/bradbumbalough/react-initicons#readme"
+  "homepage": "https://github.com/bradbumbalough/react-initicon#readme"
 }
