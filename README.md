@@ -53,4 +53,4 @@ var Initicon = require('react-initicon/native');
 |`brightness`|String|Specify the `hsl` lightness (brightness) value|
 
 ## Contributing
-Modify the files in the `src` folder. Before committing, update the build by running `npm run build`. This will babelify the code and then bundle into `initicon.min.j` for a browser version.
+Modify the files in the `src` folder. Before committing, update the build by running `npm run build`. This will babelify the code and then bundle into `initicon.min.js` for a browser version.
