@@ -6,7 +6,10 @@
   "scripts": {
     "build": "babel -d ./ src --presets es2015,react,stage-0 && uglifyjs shared.js index.js --compress -o initicon.min.js"
   },
-  "author": "Brad Bumbalough <bradley.bumbalough@gmail.com>",
+  "author": {
+    "name": "Brad Bumbalough",
+    "email": "bradley.bumbalough@gmail.com"
+  },
   "contributors": [
     {
       "name": "Michael Hirsch",
