@@ -29,7 +29,7 @@ class Initicon extends React.Component {
 }
 
 Initicon.propTypes = {
-  text: React.PropTypes.string.isRequired,
+  text: React.PropTypes.any.isRequired,
   size: React.PropTypes.any.isRequired,
   seed: React.PropTypes.number,
   color: React.PropTypes.any,
