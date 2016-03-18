@@ -14,7 +14,9 @@ function getFontSize(props) {
 
 function getInitials(props) {
   let {text, single} = props
-  if (text.indexOf(" ") > 0 && !single) {
+  if (text !== null && typeof text === 'object') {
+    return text;
+  } else if (text.indexOf(" ") > 0 && !single) {
     return text.split(" ")[0].charAt(0) + text.split(" ")[1].charAt(0)
   } else {
     return text.charAt(0)
