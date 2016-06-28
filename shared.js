@@ -1,5 +1,7 @@
 "use strict";
 
+var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol ? "symbol" : typeof obj; };
+
 function getBackgroundColor(props) {
   var seed = props.seed;
   var saturation = props.saturation;
@@ -23,7 +25,7 @@ function getInitials(props) {
   var text = props.text;
   var single = props.single;
 
-  if (text !== null && typeof text === 'object') {
+  if (text !== null && (typeof text === "undefined" ? "undefined" : _typeof(text)) === 'object') {
     return text;
   } else if (text.indexOf(" ") > 0 && !single) {
     return text.split(" ")[0].charAt(0) + text.split(" ")[1].charAt(0);

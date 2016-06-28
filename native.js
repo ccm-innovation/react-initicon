@@ -2,26 +2,21 @@
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
+var _react = require('react');
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactNative = require('react-native');
+
+var _shared = require('./shared');
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var React = require('react-native');
-
-var View = React.View;
-var Text = React.Text;
-var StyleSheet = React.StyleSheet;
-var PropTypes = React.PropTypes;
-var Component = React.Component;
-
-var _require = require('./shared');
-
-var getBackgroundColor = _require.getBackgroundColor;
-var getFontSize = _require.getFontSize;
-var getInitials = _require.getInitials;
-var defaultProps = _require.defaultProps;
 
 var NativeIniticon = function (_Component) {
   _inherits(NativeIniticon, _Component);
@@ -37,42 +32,42 @@ var NativeIniticon = function (_Component) {
     value: function render() {
       var props = this.props;
 
-      return React.createElement(
-        View,
+      return _react2.default.createElement(
+        _reactNative.View,
         { style: [styles.icon, {
-            backgroundColor: getBackgroundColor(props),
+            backgroundColor: (0, _shared.getBackgroundColor)(props),
             height: this.props.size,
             width: this.props.size,
             borderRadius: this.props.size / 2
           }, this.props.style]
         },
-        React.createElement(
-          Text,
-          { style: [styles.text, { fontSize: getFontSize(props) }] },
-          getInitials(props)
+        _react2.default.createElement(
+          _reactNative.Text,
+          { style: [styles.text, { fontSize: (0, _shared.getFontSize)(props) }] },
+          (0, _shared.getInitials)(props)
         )
       );
     }
   }]);
 
   return NativeIniticon;
-}(Component);
+}(_react.Component);
 
 ;
 
 NativeIniticon.propTypes = {
-  text: React.PropTypes.string.isRequired,
-  size: React.PropTypes.any.isRequired,
-  seed: React.PropTypes.number,
-  color: React.PropTypes.any,
-  single: React.PropTypes.bool,
-  saturation: React.PropTypes.string,
-  brightness: React.PropTypes.string
+  text: _react2.default.PropTypes.string.isRequired,
+  size: _react2.default.PropTypes.any.isRequired,
+  seed: _react2.default.PropTypes.number,
+  color: _react2.default.PropTypes.any,
+  single: _react2.default.PropTypes.bool,
+  saturation: _react2.default.PropTypes.string,
+  brightness: _react2.default.PropTypes.string
 };
 
-NativeIniticon.defaultProps = defaultProps;
+NativeIniticon.defaultProps = _shared.defaultProps;
 
-var styles = StyleSheet.create({
+var styles = _reactNative.StyleSheet.create({
   icon: {
     flex: 1,
     justifyContent: 'center',

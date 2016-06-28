@@ -1,19 +1,17 @@
-let React = require('react-native')
+import React, {Component} from 'react';
+import {
+  PropTypes,
+  StyleSheet,
+  Text,
+  View,
+} from 'react-native';
 
-let {
- View,
- Text,
- StyleSheet,
- PropTypes,
- Component
-} = React;
-
-let {
+import {
   getBackgroundColor,
   getFontSize,
   getInitials,
-  defaultProps
-} = require('./shared')
+  defaultProps,
+} from './shared';
 
 class NativeIniticon extends Component {
   render() {
@@ -40,20 +38,20 @@ NativeIniticon.propTypes = {
   color: React.PropTypes.any,
   single: React.PropTypes.bool,
   saturation: React.PropTypes.string,
-  brightness: React.PropTypes.string
+  brightness: React.PropTypes.string,
 }
 
-NativeIniticon.defaultProps = defaultProps
+NativeIniticon.defaultProps = defaultProps;
 
-let styles = StyleSheet.create({
+const styles = StyleSheet.create({
   icon: {
     flex: 1,
     justifyContent: 'center',
-    alignItems: 'center'
+    alignItems: 'center',
   },
   text: {
-    color: '#fff'
-  }
+    color: '#fff',
+  },
 })
 
 module.exports = NativeIniticon;
