@@ -11,7 +11,7 @@
 ![IC](https://drive.google.com/uc?export=view&id=0BwAfqxmTWrImanU0WU1WSnNhME0)
 ![ON](https://drive.google.com/uc?export=view&id=0BwAfqxmTWrImRXVWZDJyWWhzbHc)
 
-[Initicon Demo](https://bradbumbalough.github.io/react-initicon)
+[Initicon Demo](https://ccm-innovation.github.io/react-initicon)
 
 ## Usage
 ```JavaScript
