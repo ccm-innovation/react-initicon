@@ -25,7 +25,7 @@
 
 ## Browser
 ```HTML
-<script src="https://rawgit.com/bradbumbalough/react-initicon/master/initicon.min.js"></script>
+<script src="https://rawgit.com/ccm-innovation/react-initicon/master/initicon.min.js"></script>
 ```
 
 ## Installation

@@ -39,10 +39,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bradbumbalough/react-initicon.git"
+    "url": "git+https://github.com/ccm-innovation/react-initicon.git"
   },
   "bugs": {
-    "url": "https://github.com/bradbumbalough/react-initicon/issues"
+    "url": "https://github.com/ccm-innovation/react-initicon/issues"
   },
-  "homepage": "https://github.com/bradbumbalough/react-initicon#readme"
+  "homepage": "https://github.com/ccm-innovation/react-initicon#readme"
 }
