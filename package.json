@@ -14,17 +14,21 @@
     {
       "name": "Michael Hirsch",
       "email": "michael@hirsch.me"
+    },
+    {
+      "name": "Calvin Mikael",
+      "email": "calvinmikael@gmail.com"
     }
   ],
   "license": "MIT",
   "devDependencies": {
-    "babel-cli": "^6.2.0",
-    "babel-preset-es2015": "^6.1.18",
-    "babel-preset-react": "^6.1.18",
-    "babel-preset-stage-0": "^6.3.13",
-    "browserify": "^13.0.0",
+    "babel-cli": "^6.10.1",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-react": "^6.11.1",
+    "babel-preset-stage-0": "^6.5.0",
+    "browserify": "^13.0.1",
     "concat-cli": "^4.0.0",
-    "uglify-js": "^2.6.1",
+    "uglify-js": "^2.6.4",
     "uglifyjs": "^2.4.10"
   },
   "keywords": [
