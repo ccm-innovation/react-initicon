@@ -8,6 +8,10 @@ var _react2 = _interopRequireDefault(_react);
 
 var _reactNative = require('react-native');
 
+var _propTypes = require('prop-types');
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
 var _shared = require('./shared');
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
@@ -24,7 +28,7 @@ var NativeIniticon = function (_Component) {
   function NativeIniticon() {
     _classCallCheck(this, NativeIniticon);
 
-    return _possibleConstructorReturn(this, Object.getPrototypeOf(NativeIniticon).apply(this, arguments));
+    return _possibleConstructorReturn(this, (NativeIniticon.__proto__ || Object.getPrototypeOf(NativeIniticon)).apply(this, arguments));
   }
 
   _createClass(NativeIniticon, [{
@@ -56,13 +60,13 @@ var NativeIniticon = function (_Component) {
 ;
 
 NativeIniticon.propTypes = {
-  text: _react2.default.PropTypes.string.isRequired,
-  size: _react2.default.PropTypes.any.isRequired,
-  seed: _react2.default.PropTypes.number,
-  color: _react2.default.PropTypes.any,
-  single: _react2.default.PropTypes.bool,
-  saturation: _react2.default.PropTypes.string,
-  brightness: _react2.default.PropTypes.string
+  text: _propTypes2.default.string.isRequired,
+  size: _propTypes2.default.any.isRequired,
+  seed: _propTypes2.default.number,
+  color: _propTypes2.default.any,
+  single: _propTypes2.default.bool,
+  saturation: _propTypes2.default.string,
+  brightness: _propTypes2.default.string
 };
 
 NativeIniticon.defaultProps = _shared.defaultProps;

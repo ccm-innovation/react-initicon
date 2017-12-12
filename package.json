@@ -1,6 +1,6 @@
 {
   "name": "react-initicon",
-  "version": "0.2.1",
+  "version": "0.3.0",
   "description": "A lightweight React library to generate dynamic Initial Icons (similar to Identicons).",
   "main": "lib",
   "scripts": {

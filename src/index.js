@@ -7,6 +7,7 @@ if (typeof require != 'undefined') {
     getInitials,
     defaultProps
   } = require('./shared')
+  var PropTypes = require('prop-types');
 }
 
 class Initicon extends React.Component {
@@ -29,13 +30,13 @@ class Initicon extends React.Component {
 }
 
 Initicon.propTypes = {
-  text: React.PropTypes.any.isRequired,
-  size: React.PropTypes.any.isRequired,
-  seed: React.PropTypes.number,
-  color: React.PropTypes.any,
-  single: React.PropTypes.bool,
-  saturation: React.PropTypes.string,
-  brightness: React.PropTypes.string
+  text: PropTypes.any.isRequired,
+  size: PropTypes.any.isRequired,
+  seed: PropTypes.number,
+  color: PropTypes.any,
+  single: PropTypes.bool,
+  saturation: PropTypes.string,
+  brightness: PropTypes.string
 }
 
 Initicon.defaultProps = defaultProps
