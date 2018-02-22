@@ -11,12 +11,13 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 if (typeof require != 'undefined') {
   var React = require('react');
 
-  var _require = require('./shared');
+  var _require = require('./shared'),
+      getBackgroundColor = _require.getBackgroundColor,
+      getFontSize = _require.getFontSize,
+      getInitials = _require.getInitials,
+      defaultProps = _require.defaultProps;
 
-  var getBackgroundColor = _require.getBackgroundColor;
-  var getFontSize = _require.getFontSize;
-  var getInitials = _require.getInitials;
-  var defaultProps = _require.defaultProps;
+  var PropTypes = require('prop-types');
 }
 
 var Initicon = function (_React$Component) {
@@ -25,7 +26,7 @@ var Initicon = function (_React$Component) {
   function Initicon() {
     _classCallCheck(this, Initicon);
 
-    return _possibleConstructorReturn(this, Object.getPrototypeOf(Initicon).apply(this, arguments));
+    return _possibleConstructorReturn(this, (Initicon.__proto__ || Object.getPrototypeOf(Initicon)).apply(this, arguments));
   }
 
   _createClass(Initicon, [{
@@ -53,13 +54,13 @@ var Initicon = function (_React$Component) {
 }(React.Component);
 
 Initicon.propTypes = {
-  text: React.PropTypes.any.isRequired,
-  size: React.PropTypes.any.isRequired,
-  seed: React.PropTypes.number,
-  color: React.PropTypes.any,
-  single: React.PropTypes.bool,
-  saturation: React.PropTypes.string,
-  brightness: React.PropTypes.string
+  text: PropTypes.any.isRequired,
+  size: PropTypes.any.isRequired,
+  seed: PropTypes.number,
+  color: PropTypes.any,
+  single: PropTypes.bool,
+  saturation: PropTypes.string,
+  brightness: PropTypes.string
 };
 
 Initicon.defaultProps = defaultProps;

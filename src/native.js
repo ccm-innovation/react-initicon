@@ -1,10 +1,10 @@
 import React, {Component} from 'react';
 import {
-  PropTypes,
   StyleSheet,
   Text,
   View,
 } from 'react-native';
+import PropTypes from 'prop-types';
 
 import {
   getBackgroundColor,
@@ -32,13 +32,13 @@ class NativeIniticon extends Component {
 };
 
 NativeIniticon.propTypes = {
-  text: React.PropTypes.string.isRequired,
-  size: React.PropTypes.any.isRequired,
-  seed: React.PropTypes.number,
-  color: React.PropTypes.any,
-  single: React.PropTypes.bool,
-  saturation: React.PropTypes.string,
-  brightness: React.PropTypes.string,
+  text: PropTypes.string.isRequired,
+  size: PropTypes.any.isRequired,
+  seed: PropTypes.number,
+  color: PropTypes.any,
+  single: PropTypes.bool,
+  saturation: PropTypes.string,
+  brightness: PropTypes.string,
 }
 
 NativeIniticon.defaultProps = defaultProps;
