@@ -11,12 +11,11 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 if (typeof require != 'undefined') {
   var React = require('react');
 
-  var _require = require('./shared');
-
-  var getBackgroundColor = _require.getBackgroundColor;
-  var getFontSize = _require.getFontSize;
-  var getInitials = _require.getInitials;
-  var defaultProps = _require.defaultProps;
+  var _require = require('./shared'),
+      getBackgroundColor = _require.getBackgroundColor,
+      getFontSize = _require.getFontSize,
+      getInitials = _require.getInitials,
+      defaultProps = _require.defaultProps;
 }
 
 var Initicon = function (_React$Component) {
@@ -25,7 +24,7 @@ var Initicon = function (_React$Component) {
   function Initicon() {
     _classCallCheck(this, Initicon);
 
-    return _possibleConstructorReturn(this, Object.getPrototypeOf(Initicon).apply(this, arguments));
+    return _possibleConstructorReturn(this, (Initicon.__proto__ || Object.getPrototypeOf(Initicon)).apply(this, arguments));
   }
 
   _createClass(Initicon, [{

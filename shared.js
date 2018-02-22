@@ -1,12 +1,12 @@
 "use strict";
 
-var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol ? "symbol" : typeof obj; };
+var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 function getBackgroundColor(props) {
-  var seed = props.seed;
-  var saturation = props.saturation;
-  var brightness = props.brightness;
-  var color = props.color;
+  var seed = props.seed,
+      saturation = props.saturation,
+      brightness = props.brightness,
+      color = props.color;
 
   if (color) return color;
   var hue = Math.sin(seed);
@@ -22,8 +22,8 @@ function getFontSize(props) {
 }
 
 function getInitials(props) {
-  var text = props.text;
-  var single = props.single;
+  var text = props.text,
+      single = props.single;
 
   if (text !== null && (typeof text === "undefined" ? "undefined" : _typeof(text)) === 'object') {
     return text;
